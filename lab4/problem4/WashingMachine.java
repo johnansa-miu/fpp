@@ -1,6 +1,6 @@
 package lab4.problem4;
 
-public class WashingMachine extends Appliance {
+public class WashingMachine implements Appliance {
     private final int loadCapacity;
 
     public WashingMachine(int loadCapacity) {
@@ -11,8 +11,12 @@ public class WashingMachine extends Appliance {
         return loadCapacity;
     }
 
-    @Override
     public void performFunction() {
         System.out.println("Starting wash cycle with load capacity: " + loadCapacity + " kg.");
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
     }
 }

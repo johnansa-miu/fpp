@@ -1,6 +1,6 @@
 package lab4.problem4;
 
-public class Refrigerator extends Appliance {
+public class Refrigerator implements Appliance {
     private final int temperature;
 
     public Refrigerator(int temperature) {
@@ -14,5 +14,10 @@ public class Refrigerator extends Appliance {
     @Override
     public void performFunction() {
         System.out.println("Cooling items at temperature: " + temperature + "°C.");
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
     }
 }

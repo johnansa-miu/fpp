@@ -1,6 +1,6 @@
 package lab4.problem4;
 
-public class Microwave extends Appliance {
+public class Microwave implements Appliance {
     private final int powerLevel;
 
     public Microwave(int powerLevel) {
@@ -18,5 +18,10 @@ public class Microwave extends Appliance {
     @Override
     public void performFunction() {
         System.out.println(heatFood());
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
     }
 }
