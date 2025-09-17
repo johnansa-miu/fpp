@@ -11,16 +11,16 @@ public class OrderTest {
         printOrders(orders);
 
         // b) Add at least five Order objects
-        orders.add(new Order("1001", "Alice", 45.0));
-        orders.add(new Order("1002", "Bob", 75.0));
-        orders.add(new Order("1003", "Charlie", 30.0));
+        orders.add(new Order("1001", "John", 45.0));
+        orders.add(new Order("1002", "Tanveer", 75.0));
+        orders.add(new Order("1003", "Badri", 30.0));
         orders.add(new Order("1004", "David", 60.0));
-        orders.add(new Order("1005", "Eve", 90.0));
+        orders.add(new Order("1005", "Khanh", 90.0));
         System.out.println("\nb) After adding 5 orders:");
         printOrders(orders);
 
         // c) Delete an object by instance
-        Order toRemove = new Order("1003", "Charlie", 30.0);
+        Order toRemove = new Order("1003", "Badri", 30.0);
         orders.remove(toRemove);
         System.out.println("\nc) After removing order with ID 1003:");
         printOrders(orders);
@@ -33,7 +33,7 @@ public class OrderTest {
         System.out.println("\ne) Order at index 1: " + retrieved);
 
         // f) Update the details of an Order by position
-        orders.set(1, new Order("1002", "Bob Updated", 80.0));
+        orders.set(1, new Order("1002", "Tanveer Updated", 80.0));
         System.out.println("\nf) After updating order at index 1:");
         printOrders(orders);
 
