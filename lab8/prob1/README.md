@@ -1,0 +1,1 @@
+To use an object as a key in a HashMap, you must override equals and hashCode consistently.
